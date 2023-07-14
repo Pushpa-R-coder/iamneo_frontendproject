@@ -59,7 +59,7 @@ item.addEventListener('drop', handleDrop, false);
 item.addEventListener('dragend', handleDragEnd, false);
 });
 });
-function search_animal() {
+function search() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();
 let x = document.getElementsByClassName('col-md-3');
@@ -83,7 +83,7 @@ x[i].style.display="";
 </div>
 <ul style="padding-left:260px;">
 <div>
-<input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Search here">
+<input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search here">
 </div>
 </ul>
 <ul style="padding-left:150px;">
