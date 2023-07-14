@@ -1,0 +1,163 @@
+@charset "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+.cont {
+  color: #EEE;
+}
+div.stars {
+  padding-right:95px;
+  width: 270px; 
+}
+input.star { display: none; }
+label.star {
+  float:right;
+  content: "\f005"; 
+  margin:2px;
+  color:black;
+  font-size:20px;
+  font-family: FontAwesome;
+  display: inline-block; 
+  transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+#searchbar{
+  margin-left: 15%;
+  padding:5px;
+  border-radius: 10px;
+}   
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color:#202A44;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+.sidenav a {
+  padding: 2px 18px 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidenav a:hover {
+  color: orange;
+}
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+.header1 {
+  display: flex;
+  padding-right:100px;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background:white;
+  position: fixed;
+}
+.header2 {
+  display: flex;
+  padding-right:680px;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background:#ECECEC;
+  position: fixed;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background:#F5F5F5;
+  position: fixed;
+}
+.heading ul {
+  display: flex;
+}
+.heading ul li {
+  list-style: none;
+}
+.heading ul li a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  color: white;
+  margin: 2px 14px;
+  font-size: 18px;
+  transition-duration: 1s;
+}
+.heading ul li a:active {
+  color: red;
+}
+.heading ul li a:hover {
+  color: rgb(243, 168, 7);
+  transition-duration: 1s;
+}
+.heading ul li a::before {
+  content: "";
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition-duration: 1s;
+}
+.heading ul li a:hover::before {
+  width: 100%;
+  transition-duration: 1s;
+  background-color: rgb(243, 168, 7);
+}
+.menu {
+  visibility: hidden;
+}
+@media screen and (max-width: 1250px) {
+  .heading ul li {
+    display: none;
+  }
+.menu ul {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center; 
+  }
+@media screen and (max-width: 550px) {
+    .heading ul li {
+    display: none;
+ }
+.heading1 {
+   opacity: 1;
+   bottom: 8px;
+  }
+header {
+   height: 250px;
+  }
+}}
